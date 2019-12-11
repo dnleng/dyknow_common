@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <name>dyknow_common</name>
+  <version>0.3.0</version>
+  <description>Contains the common components all DyKnow software depends on.</description>
+  
+  <maintainer email="daniel.de.leng@liu.se">Daniel de Leng</maintainer>
+  <author email="daniel.de.leng@liu.se">Daniel de Leng</author>
+
+  <license>BSD</license>
+
+  <url type="website">http://www.dyknow.eu</url>
+  <url type="repository">https://gitlab.ida.liu.se/dyknow/dyknow_common.git</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>dyknow_nodehandle</run_depend>
+
+  <export>
+    <metapackage />
+  </export>
+</package>

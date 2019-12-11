@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package>
+  <name>dyknow_nodehandle</name>
+  <version>0.3.0</version>
+  <description>Provides wrapper code for nodelets to allow for extensive external control.</description>
+
+  <maintainer email="daniel.de.leng@liu.se">Daniel de Leng</maintainer>
+  <author email="daniel.de.leng@liu.se">Daniel de Leng</author>
+    
+  <license>BSD</license>
+  <url type="website">http://www.dyknow.eu</url>
+  <url type="repository">https://gitlab.ida.liu.se/dyknow/dyknow_common.git</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>message_filters</build_depend>
+  <build_depend>topic_tools</build_depend>
+  <build_depend>nodelet</build_depend>
+  <build_depend>cmake_modules</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>dyknow_analytics</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>message_filters</run_depend>
+  <run_depend>topic_tools</run_depend>
+  <run_depend>nodelet</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>dyknow_analytics</run_depend>
+  
+  <export>
+    <cpp cflags="-I${prefix}/include" lflags="-L${prefix}/lib"/>
+  </export>
+</package>
